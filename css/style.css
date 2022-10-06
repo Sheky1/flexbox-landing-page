@@ -1,0 +1,247 @@
+body{
+    font-family:'Open-sans', sans-serif;
+    font-size:17px;
+    line-height:1.5em;
+    margin:0;
+    padding:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+.primary-text{
+    color:#56a79a;
+  }
+
+.container {
+    margin: auto;
+}
+
+.current {
+    color: #56a79a;
+    border-bottom: #56a79a 3px solid;
+    padding-bottom: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #56a79a;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color:#888;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    color: #56a79a;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #56a79a;
+}
+
+/* SHOWCASE */
+
+.showcase {
+    background: url('../img/showcase.jpg') no-repeat center center;
+    border-bottom: 1px solid #56a79a;
+}
+
+.showcase .row {
+    height: 600px;
+}
+
+.showcase .showcase-content {
+    background: #333;
+    opacity: 0.9;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.showcase h1{
+    color: #ccc;
+    font-size: 30px;
+}
+
+.showcase p{
+    color:#ccc;
+}
+
+/* FEATURES */
+
+.features h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.features p {
+    color: #888;
+    padding-bottom: 30px;
+}
+
+.features i {
+    font-size:60px;
+    color:#56a79a;
+}
+
+/* INFO */
+
+.info {
+    background: url(../img/info-bg.jpg) no-repeat;
+}
+
+.info img {
+    width: 100%;
+}
+
+ .info ul{
+    color: #ccc;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.info h2 {
+    color: #ccc;
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* COMPANY */
+
+.company {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+.company h4 {
+    text-transform: uppercase;
+}
+
+.company input, .company button {
+    padding: 10px;
+    border: none;
+}
+
+button {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+}
+button:hover {
+    background: #56a79a;
+    color: #333;
+}
+
+/* ABOUT */
+
+.about {
+    padding-bottom: 30px;
+}
+
+/* SERVICES */
+
+.services {
+    margin: 0 15px;
+    padding-bottom: 40px;
+}
+
+.services li{
+    color: white;
+    background: #56a79a;
+    padding: 15px;
+}
+
+.services li:nth-child(odd) {
+    background: #333;
+}
+
+/* CONTACT */
+
+.contact {
+    padding-bottom: 40px;
+}
+
+.contact form {
+    color: white;
+    background: #333;
+}
+
+.contact label{
+    display: block;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    width: 50%;
+}
+
+.contact button {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #56a79a;
+    color: white;
+}
+
+/* MEDIA Q */
+
+@media (min-width: 768px) {
+    .container{
+        width: 46rem;
+    }
+
+    .company .col-4-big {
+        padding: 10px;
+    }
+}
+
+@media (min-width:991px) {
+    .container {
+        width: 61rem;
+    }
+
+    .showcase-content {
+        padding: 40px !important;
+    }
+
+    .showcase h1 {
+        font-size: 3em;
+        margin:0;
+        padding-bottom: 20px
+    }
+
+    .showcase-content p {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 71rem;
+    }
+}
